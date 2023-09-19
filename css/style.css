@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* overflow-x: hidden; */
+}
+:root{
+    --white: hsl(0, 0%, 100%)
+}
+a{
+    text-decoration: none;
+    color: var(--red);
+}
+i{
+    margin: 0 10px;
+}
+body{
+    background-color: rgb(41, 41, 56);
+    padding: 6rem 0;
+    color: var(--white);
+}
+header{
+    width: 45rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.devfinder{
+    font-weight: 600;
+}
+.light_mode, .dark_mode{
+    cursor: pointer;
+}
+.dark_mode{
+    display: none;
+}
+nav{
+    background-color: rgba(62, 62, 126, 0.882);
+    padding: 10px 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45rem;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+nav input{
+    all: unset;
+}
+nav input::placeholder{
+    color: white;
+}
+nav button{
+    background-color: blue;
+    padding: 10px 1rem;
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    font-weight: 600;
+}
+main{
+    margin: 2rem auto;
+    padding: 3rem 1.5rem;
+    background-color: rgba(62, 62, 126, 0.882);
+    border-radius: 7px;
+    width: 45rem;
+}
+.main_top{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+.main_left{
+    display: flex;
+    gap: 10px;
+    width: 75%;
+}
+main img{
+    width: 17%;
+    border-radius: 50%;
+    
+}
+main h3{
+    margin: 6px 0 1rem 0;
+}
+span{
+    color: blue;
+}
+#profile{
+    background-color: rgba(36, 36, 49, 0.886);
+    display: flex;
+    gap: 3rem;
+    width: 50%;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+}
+#profile h5{
+    font-weight: 100;
+}
+#profile h4{
+    margin-top: 7px;
+}
+.socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 0 auto;
+}
+@media screen and (max-width:768px) {
+    header, nav, main{
+        width: 37rem;
+    }
+    main{
+        padding: 3rem 1rem;
+    }
+    .main_top{
+        display: block;
+    }
+    .main_left{
+        width: 90%;
+        gap: 2rem;
+    }
+    main img{
+        width: 20%;
+    }
+    .date{
+        margin: 1rem 0 0 7rem;
+        
+    }
+    #profile{
+        width: 70%;
+    }
+    .socials{
+        grid-column-gap: 5px;
+        grid-row-gap: 1rem;
+    }
+    i{
+        margin: 0 4px;
+    }
+}
+@media screen and (max-width: 480px) {
+    header{
+        padding: 1rem 1.5rem;
+    }
+    .devfinder, .light_mode, .dark_mode{
+        font-size: 33px;
+    }
+    i{
+        margin: 0 1rem;
+        font-size: 2rem;
+    }
+    nav button{
+        padding: 1.5rem 2rem;
+        font-size: 20px;
+    }
+    nav input::placeholder{
+        font-size: 20px;
+    }
+    main{
+        padding: 3rem 2rem;
+    }
+    .main_left h2{
+        font-size: 30px;
+    }
+    .main_left h4{
+        font-size: 25px;
+    }
+    main img{
+        width: 25%;
+    }
+    .date{
+        font-size: 27px;
+    }
+    #profile{
+        width: 90%;
+        padding: 2rem;
+    }
+    #profile h4, #profile h5{
+        font-size: 1.3rem;
+    }
+    .socials{
+        grid-template-columns: 1fr;
+    }
+    .socials p{
+        font-size: 1.5rem;
+    }
+}
