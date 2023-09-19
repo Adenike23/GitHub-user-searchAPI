@@ -86,12 +86,12 @@ main h3{
     margin: 6px 0 1rem 0;
 }
 span{
-    color: blue;
+    color: rgb(75, 75, 211);
 }
 #profile{
     background-color: rgba(36, 36, 49, 0.886);
     display: flex;
-    gap: 3rem;
+    gap: 5rem;
     width: 50%;
     margin: 2rem auto;
     padding: 1rem;
@@ -143,6 +143,14 @@ span{
     }
 }
 @media screen and (max-width: 480px) {
+    nav{
+        width: 34rem;
+        margin: 0 1.5rem;
+    }
+    main{
+        width: 34rem;
+        margin: 2rem 1.5rem;
+    }
     header{
         padding: 1rem 1.5rem;
     }
@@ -158,7 +166,7 @@ span{
         font-size: 20px;
     }
     nav input::placeholder{
-        font-size: 20px;
+        font-size: 15px;
     }
     main{
         padding: 3rem 2rem;
@@ -167,7 +175,7 @@ span{
         font-size: 30px;
     }
     .main_left h4{
-        font-size: 25px;
+        font-size: 22px;
     }
     main img{
         width: 25%;
@@ -176,7 +184,7 @@ span{
         font-size: 27px;
     }
     #profile{
-        width: 90%;
+        width: 95%;
         padding: 2rem;
     }
     #profile h4, #profile h5{
